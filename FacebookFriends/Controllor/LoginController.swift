@@ -9,18 +9,13 @@
 import UIKit
 var userName : String?
 class LoginController: UIViewController {
-    var _user = User()
-    var user = [UserDetail]()
+
     @IBOutlet weak var UserNameTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
 
     
     @IBAction func SigninButton(_ sender: Any) {
         userName = UserNameTextField.text!
-        _user.get { (UserDetail) in
-            self.user = UserDetail
-            self.performSegue(withIdentifier: "userSegue", sender: nil)
-        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()

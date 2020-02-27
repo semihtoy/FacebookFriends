@@ -9,10 +9,12 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var UserPicture: UIImageView!
-    @IBOutlet weak var UserNameLabel: UILabel!
-    @IBOutlet weak var UserFavoriteFriendLabel: UILabel!
+    @IBOutlet weak var ProfilPicture: UIImageView!
+    @IBOutlet weak var UserName: UILabel!
+    @IBOutlet weak var UserCompany: UILabel!
+    @IBOutlet weak var isActive: UIImageView!
+ 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

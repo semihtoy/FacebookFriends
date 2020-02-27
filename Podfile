@@ -8,6 +8,7 @@ target 'FacebookFriends' do
   # Pods for FacebookFriends
 pod 'Alamofire', '~> 5.0'
 pod 'RealmSwift'
+pod 'Kingfisher', '~> 5.0'
 
   target 'FacebookFriendsTests' do
     inherit! :search_paths
