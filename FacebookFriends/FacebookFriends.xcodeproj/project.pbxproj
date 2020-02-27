@@ -99,6 +99,10 @@
 		AE50F3B22407A6A900729648 /* FacebookFriends */ = {
 			isa = PBXGroup;
 			children = (
+				AE50F3E72407A73B00729648 /* HTTPRequest */,
+				AE50F3E62407A73100729648 /* Service */,
+				AE50F3E52407A72B00729648 /* Model */,
+				AE50F3E32407A6F700729648 /* Controller */,
 				AE50F3B32407A6A900729648 /* AppDelegate.swift */,
 				AE50F3B52407A6A900729648 /* SceneDelegate.swift */,
 				AE50F3B72407A6A900729648 /* ViewController.swift */,
@@ -126,6 +130,42 @@
 				AE50F3D72407A6AA00729648 /* Info.plist */,
 			);
 			path = FacebookFriendsUITests;
+			sourceTree = "<group>";
+		};
+		AE50F3E32407A6F700729648 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE50F3E42407A71900729648 /* Cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE50F3E42407A71900729648 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AE50F3E52407A72B00729648 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE50F3E62407A73100729648 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AE50F3E72407A73B00729648 /* HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HTTPRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
