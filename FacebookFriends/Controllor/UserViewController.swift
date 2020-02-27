@@ -28,20 +28,20 @@ class UserViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         cell.ProfilPicture.layer.borderWidth = 2
         cell.ProfilPicture.layer.borderColor = UIColor(red:80/255, green:155/255, blue:243/255, alpha: 1).cgColor
         let imageURL = URL(string: user[indexPath.row].picture!)
-        cell.ProfilPicture.kf.setImage(with: imageURL);
+        cell.ProfilPicture.kf.setImage(with: imageURL)
         if user[indexPath.row].isActive == false {
             cell.isActive.isHidden = true
         }
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                selectedFilm = user[indexPath.row];
-        self.performSegue(withIdentifier: "ToDetailsFilmSegue", sender: nil)
+                selectedUser = user[indexPath.row];
+        self.performSegue(withIdentifier: "UserDetailSegue", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ToDetailsFilmSegue" {
-            let destinationVC = segue.destination as! DetailFilmController
-            destinationVC.selectedFilm = selectedFilm
+        if segue.identifier == "UserDetailSegue" {
+            let destinationVC = segue.destination as! UserDetailViewController
+            destinationVC.selectedUser = selectedUser
         }
     }
     

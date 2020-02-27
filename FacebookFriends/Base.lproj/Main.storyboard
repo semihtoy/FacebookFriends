@@ -288,7 +288,7 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="23e-GS-j5L">
                                         <rect key="frame" x="37" y="502" width="329" height="54"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oxa-PE-Npq">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oxa-PE-Npq">
                                             <size key="itemSize" width="63" height="53"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -296,7 +296,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FriendCell" id="aRh-to-2JE" customClass="FriendCollectionViewCell" customModule="FacebookFriends" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="63" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.5" width="63" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Yol-Co-pk4">
                                                     <rect key="frame" x="0.0" y="0.0" width="63" height="53"/>
@@ -330,7 +330,7 @@
                                                 </collectionViewCellContentView>
                                                 <size key="customSize" width="63" height="53"/>
                                                 <connections>
-                                                    <outlet property="FriendName" destination="ERC-1H-4Fo" id="gOv-rj-1Vb"/>
+                                                    <outlet property="FriendName" destination="J0h-fX-qOu" id="Ker-aj-FPQ"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -346,6 +346,7 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ojn-9d-PMp">
                                                 <rect key="frame" x="37" y="0.0" width="300" height="300"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="0vW-Ya-0uC"/>
                                                 </constraints>
@@ -412,7 +413,7 @@
                         <outlet property="UserEmail" destination="vCD-g5-Wle" id="X7e-k8-n2L"/>
                         <outlet property="UserName" destination="8Yz-dt-65o" id="j7D-nw-FQJ"/>
                         <outlet property="UserPhone" destination="68K-Zt-vgN" id="RgX-5O-tbc"/>
-                        <outlet property="UserPicture" destination="nx3-IJ-3Zg" id="3wr-Ev-GKI"/>
+                        <outlet property="UserPicture" destination="ojn-9d-PMp" id="Rrh-NY-RCW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3h-A3-FXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -422,6 +423,7 @@
         <!--Navigation Controller-->
         <scene sceneID="hD0-ez-Sin">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boc-N8-0al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zcG-VE-8Zv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZCr-X2-Xh6">
@@ -433,7 +435,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZHL-bc-MwJ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="boc-N8-0al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="123.88392857142857"/>
         </scene>

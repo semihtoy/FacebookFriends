@@ -10,7 +10,10 @@ import Foundation
 import Alamofire
 class User:ServiceBase {
     func get( result: @escaping ([UserDetail]) -> Void ) -> Void {
-        http.get(url:createUrl()){ (data) in
+        let preferences = UserDefaults.standard
+       let userName = preferences.string(forKey: "userName")
+        
+        http.get(url:createUrl(userName: userName!)){ (data) in
         let jsonDecoder = JSONDecoder()
             do {
                 let responseModel = try jsonDecoder.decode([UserDetail].self, from: data)

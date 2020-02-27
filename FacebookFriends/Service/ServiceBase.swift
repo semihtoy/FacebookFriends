@@ -10,14 +10,14 @@ import Foundation
 
 protocol  ServiceBaseProtocol {
      var http:HTTP { get set };
-     func createUrl()-> String
+    func createUrl(userName:String)-> String
 }
 
 class ServiceBase:ServiceBaseProtocol{
     var http = HTTP()
     
-     func createUrl()-> String {
-        let UrlBase:String = "https://api.myjson.com/bins/\(userName ?? "")"
+    func createUrl(userName:String)-> String {
+        let UrlBase:String = "https://api.myjson.com/bins/\(userName)"
         return UrlBase;
     }
 }

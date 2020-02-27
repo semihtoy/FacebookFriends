@@ -7,7 +7,6 @@
 //
 
 import UIKit
-var userName : String?
 class LoginController: UIViewController {
 
     @IBOutlet weak var UserNameTextField: UITextField!
@@ -15,7 +14,10 @@ class LoginController: UIViewController {
 
     
     @IBAction func SigninButton(_ sender: Any) {
-        userName = UserNameTextField.text!
+        let preferences = UserDefaults.standard
+        preferences.set(UserNameTextField.text!, forKey:"userName" )
+        print(preferences.string(forKey: "userName"))
+         
     }
     override func viewDidLoad() {
         super.viewDidLoad()

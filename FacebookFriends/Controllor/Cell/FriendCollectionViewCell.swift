@@ -10,5 +10,6 @@ import UIKit
 
 class FriendCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var FriendName: UIView!
+    @IBOutlet weak var FriendName: UILabel!
+    
 }
