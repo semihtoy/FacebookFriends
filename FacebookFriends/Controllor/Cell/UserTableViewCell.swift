@@ -12,8 +12,9 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var ProfilPicture: UIImageView!
     @IBOutlet weak var UserName: UILabel!
     @IBOutlet weak var UserCompany: UILabel!
-    @IBOutlet weak var isActive: UIImageView!
- 
+    @IBAction func MoreButton(_ sender: Any) {
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

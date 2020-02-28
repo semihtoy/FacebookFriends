@@ -25,12 +25,11 @@ class UserViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                    UserTableViewCell else { return UITableViewCell() }
         cell.UserName.text = user[indexPath.row].name
         cell.UserCompany.text = user[indexPath.row].company
-        cell.ProfilPicture.layer.borderWidth = 2
-        cell.ProfilPicture.layer.borderColor = UIColor(red:80/255, green:155/255, blue:243/255, alpha: 1).cgColor
         let imageURL = URL(string: user[indexPath.row].picture!)
         cell.ProfilPicture.kf.setImage(with: imageURL)
         if user[indexPath.row].isActive == false {
-            cell.isActive.isHidden = true
+            cell.ProfilPicture.layer.borderWidth = 4
+            cell.ProfilPicture.layer.borderColor = UIColor(red:178/255, green:255/255, blue:89/255, alpha: 1).cgColor
         }
         return cell
     }

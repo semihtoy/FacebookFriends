@@ -1,5 +1,5 @@
 import Foundation
-struct UserDetail : Codable {
+struct UserDetail: Codable {
     let id : String?
     let isActive : Bool?
     let picture : String?

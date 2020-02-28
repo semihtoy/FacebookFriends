@@ -78,6 +78,7 @@
 		AE50F3A524065DD600729648 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		AEB779C72407D46D0024D67F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		AEB779C92407EA040024D67F /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
+		AEB9E932240930ED00482054 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EDAC8ECF41F83593E1858B /* Pods-FacebookFriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookFriendsTests.release.xcconfig"; path = "Target Support Files/Pods-FacebookFriendsTests/Pods-FacebookFriendsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E1223BB5BDBBE437C7D5D523 /* Pods-FacebookFriendsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookFriendsTests.debug.xcconfig"; path = "Target Support Files/Pods-FacebookFriendsTests/Pods-FacebookFriendsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2BADCE1901583FDD45B3B35 /* Pods_FacebookFriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookFriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +115,7 @@
 		127E92C8166332EEF4774A6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEB9E932240930ED00482054 /* Alamofire.framework */,
 				2C7F0356EDBBCC78B6524A6C /* Pods_FacebookFriends.framework */,
 				33A539163323F698B99BE2D8 /* Pods_FacebookFriends_FacebookFriendsUITests.framework */,
 				F2BADCE1901583FDD45B3B35 /* Pods_FacebookFriendsTests.framework */,
