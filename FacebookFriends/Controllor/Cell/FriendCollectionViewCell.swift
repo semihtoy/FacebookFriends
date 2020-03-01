@@ -8,8 +8,6 @@
 
 import UIKit
 
-class FriendCollectionViewCell: UICollectionViewCell {
-    
+class FriendCollectionViewCell: UICollectionViewCell {    
     @IBOutlet weak var FriendName: UILabel!
-    
 }

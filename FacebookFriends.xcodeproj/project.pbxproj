@@ -27,6 +27,8 @@
 		AE50F3A624065DD600729648 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50F3A524065DD600729648 /* UserTableViewCell.swift */; };
 		AEB779C82407D46D0024D67F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB779C72407D46D0024D67F /* UserDetailViewController.swift */; };
 		AEB779CA2407EA040024D67F /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB779C92407EA040024D67F /* FriendCollectionViewCell.swift */; };
+		AED40D22240A4DF9001194E2 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED40D21240A4DF9001194E2 /* RealmHelper.swift */; };
+		AED40D2C240C20DB001194E2 /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED40D2B240C20DB001194E2 /* MessageHandler.swift */; };
 		F45D010C9C2CF1A291AE3214 /* Pods_FacebookFriendsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BADCE1901583FDD45B3B35 /* Pods_FacebookFriendsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,8 @@
 		AEB779C72407D46D0024D67F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		AEB779C92407EA040024D67F /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
 		AEB9E932240930ED00482054 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED40D21240A4DF9001194E2 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		AED40D2B240C20DB001194E2 /* MessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHandler.swift; sourceTree = "<group>"; };
 		B7EDAC8ECF41F83593E1858B /* Pods-FacebookFriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookFriendsTests.release.xcconfig"; path = "Target Support Files/Pods-FacebookFriendsTests/Pods-FacebookFriendsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E1223BB5BDBBE437C7D5D523 /* Pods-FacebookFriendsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookFriendsTests.debug.xcconfig"; path = "Target Support Files/Pods-FacebookFriendsTests/Pods-FacebookFriendsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2BADCE1901583FDD45B3B35 /* Pods_FacebookFriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookFriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +202,8 @@
 			children = (
 				AE50F39C24062D3200729648 /* ServiceBase.swift */,
 				AE50F39E24062E3000729648 /* User.swift */,
+				AED40D21240A4DF9001194E2 /* RealmHelper.swift */,
+				AED40D2B240C20DB001194E2 /* MessageHandler.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -481,6 +487,7 @@
 			files = (
 				AE50F3672406229000729648 /* LoginController.swift in Sources */,
 				AE50F3A3240656A900729648 /* UserViewController.swift in Sources */,
+				AED40D2C240C20DB001194E2 /* MessageHandler.swift in Sources */,
 				AEB779C82407D46D0024D67F /* UserDetailViewController.swift in Sources */,
 				AE50F3A624065DD600729648 /* UserTableViewCell.swift in Sources */,
 				AE50F39D24062D3200729648 /* ServiceBase.swift in Sources */,
@@ -490,6 +497,7 @@
 				AE50F39B24062C3D00729648 /* Home.swift in Sources */,
 				AE50F3A124062E6300729648 /* HTTPRequest.swift in Sources */,
 				AE50F3652406229000729648 /* SceneDelegate.swift in Sources */,
+				AED40D22240A4DF9001194E2 /* RealmHelper.swift in Sources */,
 				AE50F39F24062E3000729648 /* User.swift in Sources */,
 				AEB779CA2407EA040024D67F /* FriendCollectionViewCell.swift in Sources */,
 			);

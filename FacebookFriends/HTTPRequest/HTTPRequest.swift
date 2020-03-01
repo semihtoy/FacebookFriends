@@ -10,10 +10,7 @@ import Alamofire
 class HTTP  {
     func get(url:String, result: @escaping (Data) -> Void    ) -> Void {
         AF.request(url, method: .get).response { response in
-        print(response)
         result(response.data!)
-            print(url)
-            
         }
     }
     func post() -> Void {

@@ -10,11 +10,9 @@ import UIKit
 import MapKit
 import Kingfisher
 import CoreLocation
-class UserDetailViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,CLLocationManagerDelegate, MKMapViewDelegate {
-
+class UserDetailViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,CLLocationManagerDelegate, MKMapViewDelegate {    
     var selectedUser : UserDetail?
     let locationManager = CLLocationManager()
-
     @IBOutlet weak var UserPicture: UIImageView!
     @IBOutlet weak var UserName: UILabel!
     @IBOutlet weak var UserCompany: UILabel!
@@ -26,7 +24,6 @@ class UserDetailViewController: UIViewController,UICollectionViewDelegate,UIColl
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return (selectedUser?.favorite_friends!.count)!
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendCell", for: indexPath) as?
             FriendCollectionViewCell else { return UICollectionViewCell() }
@@ -37,20 +34,15 @@ class UserDetailViewController: UIViewController,UICollectionViewDelegate,UIColl
         var locValue:CLLocationCoordinate2D = manager.location!.coordinate
         locValue.latitude = (selectedUser?.home?.latitude)!
         locValue.longitude = (selectedUser?.home?.longitude)!
-
         HomeLocation.mapType = MKMapType.standard
-
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let region = MKCoordinateRegion(center: locValue, span: span)
         HomeLocation.setRegion(region, animated: true)
-
         let annotation = MKPointAnnotation()
         annotation.coordinate = locValue
         annotation.title = selectedUser?.name
         annotation.subtitle = "current location"
         HomeLocation.addAnnotation(annotation)
-
-        //centerMap(locValue)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,9 +51,8 @@ class UserDetailViewController: UIViewController,UICollectionViewDelegate,UIColl
         UserEmail.text = selectedUser?.email
         UserPhone.text = selectedUser?.phone
         UserAbout.text = selectedUser?.about
-        UserPicture.layer.borderWidth = 2
-        UserPicture.layer.borderColor = UIColor(red:80/255, green:155/255, blue:243/255, alpha: 1).cgColor
-        let imageURL = URL(string: (selectedUser?.picture!)!)
+        UserPicture.layer.borderWidth = 0
+        let imageURL = URL(string: (selectedUser?.picture)!)
         UserPicture.kf.setImage(with: imageURL)
         FavoriteFriendCV.dataSource = self
         FavoriteFriendCV.delegate = self
@@ -80,7 +71,5 @@ class UserDetailViewController: UIViewController,UICollectionViewDelegate,UIColl
         if let coor = HomeLocation.userLocation.location?.coordinate{
             HomeLocation.setCenter(coor, animated: true)
         }
-        
     }
-
 }
