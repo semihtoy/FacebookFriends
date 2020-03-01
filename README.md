@@ -14,7 +14,7 @@ The layer that interacts directly with the user.
 # Screenshots
 
 #### Login Screen
-![](_screenshots/Login.jpeg)
+![](![LoginPage](https://user-images.githubusercontent.com/43500888/75633601-4469a980-5c17-11ea-8250-4fe0ae64e6e6.jpeg))
 #### Loading Screen
 ![](_screenshots/Loading.jpeg)
 #### Profile Screen
