@@ -14,14 +14,14 @@ The layer that interacts directly with the user.
 # Screenshots
 
 #### Login Screen
-![](![LoginPage](https://user-images.githubusercontent.com/43500888/75633601-4469a980-5c17-11ea-8250-4fe0ae64e6e6.jpeg))
+![LoginPage](https://user-images.githubusercontent.com/43500888/75633601-4469a980-5c17-11ea-8250-4fe0ae64e6e6.jpeg)
 #### Loading Screen
-![](_screenshots/Loading.jpeg)
+![Loading](https://user-images.githubusercontent.com/43500888/75633639-c1951e80-5c17-11ea-8b1b-be4f91ec5fdb.jpeg)
 #### Profile Screen
-![](_screeenshots/UserProfile.jpeg)
+![](https://user-images.githubusercontent.com/43500888/75633645-db366600-5c17-11ea-9482-0e4e0e14463d.jpeg)
 #### User Detail Screen
-![](_screenshots/UserDetail.jpeg)
-![](_screenshots/UserDetail1.jpeg)
+![UserDetailPage](https://user-images.githubusercontent.com/43500888/75633680-16d13000-5c18-11ea-8329-c45846cc3f96.jpeg)
+![UserDetailPage2](https://user-images.githubusercontent.com/43500888/75633685-26507900-5c18-11ea-89bb-08a44e3f4404.jpeg)
 
 
 
