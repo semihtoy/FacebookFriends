@@ -5,9 +5,7 @@
 //  Created by Xcode on 26.02.2020.
 //  Copyright © 2020 Xcode. All rights reserved.
 //
-
 import UIKit
-
 class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var ProfilPicture: UIImageView!
     @IBOutlet weak var UserName: UILabel!
